@@ -28,3 +28,5 @@ What was used to build this model:
 
 The code has been labeled with step-by-step instructions on how to perform this. We will now focus on what the results mean:
 <img width="1570" height="790" alt="image" src="https://github.com/user-attachments/assets/3db3b7a0-270c-4bf1-8953-b4efa4ad6ae6" />
+
+This is our final decision tree. This is basically saying that if the patient has a low response score, is a certain gender, has a small tumor size and no lymph node involvement,
