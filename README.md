@@ -38,6 +38,7 @@ The physical score basically says that, the model has narrowed the patients down
 The blue box (leaf node) basically says that the model is extremely certain that every patient in this group has had the same outcome.
 
 <img width="999" height="547" alt="image" src="https://github.com/user-attachments/assets/8879a8d9-f91b-4f9a-84a3-a8ff2f7a245b" />
+
 This bar graph is a feature importance chart. What this means is that it ranks which features were the most important for training, analysis, and prediction. In our case, the most important features were Response, N, & T. N & T are thyroid glands and Response represents the patient's response to initial treatment.
 
 <img width="691" height="547" alt="image" src="https://github.com/user-attachments/assets/5017b297-2503-48bf-8686-19715b4a6a40" />
