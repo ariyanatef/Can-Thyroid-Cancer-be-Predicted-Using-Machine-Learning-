@@ -40,6 +40,6 @@ The blue box (leaf node) basically says that the model is extremely certain that
 <img width="999" height="547" alt="image" src="https://github.com/user-attachments/assets/8879a8d9-f91b-4f9a-84a3-a8ff2f7a245b" />
 This bar graph is a feature importance chart. What this means is that it ranks which features were the most important for training, analysis, and prediction. In our case, the most important features were Response, N, & T. N & T are thyroid glands and Response represents the patient's response to initial treatment.
 
-
 <img width="691" height="547" alt="image" src="https://github.com/user-attachments/assets/5017b297-2503-48bf-8686-19715b4a6a40" />
+
 This ROC (Receiver Operating Characteristic Curve) compares the amount of false positives compared to true positives. The blue line means that the closer the curve was to the upper left corner, the less mistakes the model made with the predictions. The red-dotted line simply represents if it is randomly guessing or not. If the blue line follows this line, then it wouldn't be any better than flipping a coin since it would be completely random. What we also saw was an area under curve (AUC) score of 1.00 meaning it was able to perfectly determine the difference between someone who had recurring cancer and someone who didn't.
