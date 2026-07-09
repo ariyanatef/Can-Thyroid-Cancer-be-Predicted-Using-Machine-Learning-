@@ -26,7 +26,10 @@ What was used to build this model:
     A) For the algorithim, we used the random forest decision model. This combines the output of multiple decision trees and makes a single, accurate result.
 
 
-The code has been labeled with step-by-step instructions on how to perform this. We will now focus on what the results mean:
+Refer to the code blocks for step-by-step instructions on how to perform this. We will now focus on what the results mean:
 <img width="1570" height="790" alt="image" src="https://github.com/user-attachments/assets/3db3b7a0-270c-4bf1-8953-b4efa4ad6ae6" />
 
-This is our final decision tree. This is basically saying that if the patient has a low response score, is a certain gender, has a small tumor size and no lymph node involvement,
+This is our final decision tree. This is basically saying that if the patient has a low response score, is a certain gender, has a small tumor size and no lymph node involvement and assuming the
+arrows continue following the true value all the way to the bottom left, then this would suggest
+that 144 patient would fit this exact profile and 0 had the severe condition. The model confidently
+predicts this patients' tumor is harmless.
