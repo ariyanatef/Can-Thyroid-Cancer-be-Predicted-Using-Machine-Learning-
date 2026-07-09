@@ -26,10 +26,19 @@ What was used to build this model:
     A) For the algorithim, we used the random forest decision model. This combines the output of multiple decision trees and makes a single, accurate result.
 
 
-Refer to the code blocks for step-by-step instructions on how to perform this. We will now focus on what the results mean:
+Refer to the code blocks for step-by-step instructions on how to perform this. We will now focus on what the results mean, starting from the decision tree:
 <img width="1570" height="790" alt="image" src="https://github.com/user-attachments/assets/3db3b7a0-270c-4bf1-8953-b4efa4ad6ae6" />
 
 This is our final decision tree. This is basically saying that if the patient has a low response score, is a certain gender, has a small tumor size and no lymph node involvement and assuming the
 arrows continue following the true value all the way to the bottom left, then this would suggest
 that 144 patient would fit this exact profile and 0 had the severe condition. The model confidently
 predicts this patients' tumor is harmless.
+On the true box, if the gender is > 0.5, the model asks further questions about the patient's physical score.
+The physical score basically says that, the model has narrowed the patients down to a smaller group of 20 people. These patients had similar or same outcome however the model isn't completely sure so it asks further questions. When the physical score is  > 3.5, the model reaches a final decision and doesn't need to ask anymore questions.
+The blue box (leaf node) basically says that the model is extremely certain that every patient in this group has had the same outcome.
+
+<img width="999" height="547" alt="image" src="https://github.com/user-attachments/assets/8879a8d9-f91b-4f9a-84a3-a8ff2f7a245b" />
+This bar graph is a feature importance chart. What this means is that it ranks which features were the most important for training, analysis, and prediction. In our case, the most important features were Response, N, & T. N & T are thyroid glands and Response represents the patient's response to initial treatment.
+
+<img width="691" height="547" alt="image" src="https://github.com/user-attachments/assets/5017b297-2503-48bf-8686-19715b4a6a40" />
+This ROC (Receiver Operating Characteristic Curve) compares the amount of false positives compared to true positives. The blue line means that the closer the curve was to the upper left corner, the less mistakes the model made with the predictions. The red-dotted line simply represents if it is randomly guessing or not. If the blue line follows this line, then it wouldn't be any better than flipping a coin since it would be completely random. What we also saw was an area under curve (AUC) score of 1.00 meaning it was able to perfectly determine the difference between someone who had recurring cancer and someone who didn't.
